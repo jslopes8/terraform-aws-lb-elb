@@ -7,7 +7,7 @@ variable "subnets" {
 }
 variable "security_groups" {
     type    = list(string)
-    defaul  = []
+    default  = []
 }
 variable "listener" {
     type    = list(map(string))
