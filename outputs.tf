@@ -1,3 +1,3 @@
-output "lb_classic_id" {
+output "id" {
     value   = aws_elb.lb_classic.id
 }
