@@ -5,6 +5,7 @@ resource "aws_elb" "lb_classic" {
     name            = "elb-${var.name}"
     subnets         = var.subnets
     security_groups = var.security_groups
+    internal        = var.internal
 
     cross_zone_load_balancing   = var.cross_zone_load_balancing
     idle_timeout                = var.idle_timeout

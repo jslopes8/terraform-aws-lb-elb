@@ -1,6 +1,10 @@
 variable "name" {
     type    = string
 }
+variable "internal" {
+    type = bool
+    default = false
+}
 variable "subnets" {
     type    = list(string)
     default = []
